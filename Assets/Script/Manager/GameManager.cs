@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform mainCanvasSafeArea;
 
     [Header("Component")]
+    [SerializeField] private GameDataManager gameDataManager = new();
     [SerializeField] private SceneNavigator sceneNavigator;
     [SerializeField] private VfxManager vfxManager;
     [SerializeField] private InputManager inputManager;
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
     public Transform MainCanvasSafeArea => mainCanvasSafeArea;
     public CameraManager CameraManager => cameraManager;
     public SceneNavigator SceneNavigator => sceneNavigator;
-    public GameDataManager GameDataManager { get; private set; } = new();
+    public GameDataManager GameDataManager => gameDataManager;
     public SubSceneController CurrentSubSceneController { get; private set; }
     public VfxManager VfxManager => vfxManager;
     public GoogleSheetManager GoogleSheetManager { get; private set; } = new();
@@ -89,6 +90,8 @@ public class GameManager : MonoBehaviour
     private async void Start()
     {
         Log.Call();
+
+        SceneNavigator.FadeBackInAsync().Forget();
 
         PreventApplicationToSleep();
         vfxManager.Initialize();

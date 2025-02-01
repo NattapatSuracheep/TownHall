@@ -19,7 +19,7 @@ public class TownHallPrototypeData
 
     public Dictionary<string, List<Data>> DataList { get; private set; } = new();
 
-    private List<Data> currentListData;
+    private List<Data> currentListData = new();
     private int currentTopicIndex;
 
     public void TryAdd(string date, string topic, string message)
@@ -33,6 +33,7 @@ public class TownHallPrototypeData
         else if (string.IsNullOrEmpty(date) && !string.IsNullOrEmpty(topic))
         {
             currentListData.Add(new Data(topic, message));
+            currentTopicIndex = currentListData.Count - 1;
             return;
         }
 
@@ -49,6 +50,7 @@ public class TownHallPrototypeData
             {
                 currentListData.Add(new Data(topic, message));
                 currentTopicIndex = currentListData.Count - 1;
+                currentListData = DataList[date];
             }
             else
             {

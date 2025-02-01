@@ -8,8 +8,10 @@
     <type fullname="PageListDot" preserve="all" />
     <type fullname="ScrollRectDragDirectionDetector" preserve="all" />
     <type fullname="ScrollRectHorizontalIndicator" preserve="all" />
+    <type fullname="ScrollRectItemRayCastPassThrough" preserve="all" />
     <type fullname="ScrollRectSnap" preserve="all" />
     <type fullname="ScrollRectVerticalIndicator" preserve="all" />
+    <type fullname="TextScrollUi" preserve="all" />
     <type fullname="TownHallObj" preserve="all" />
     <type fullname="TownHallObj_2" preserve="all" />
     <type fullname="TownHallPanel" preserve="all" />
@@ -77,6 +79,7 @@
     <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
     <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
     <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />

@@ -5,12 +5,16 @@ using Cysharp.Threading.Tasks;
 using Newtonsoft.Json;
 using UnityEngine;
 
+[Serializable]
 public class GameDataManager
 {
     public const string configLabel = "config";
 
+    [SerializeField] private GoogleSheetReaderScriptableObject reader;
+
     private TownHallDataManager townHallDataManager = new();
     private SceneNavigator SceneNavigator => GameManager.Instance.SceneNavigator;
+    private GoogleSheetManager googleSheetManager = new();
 
     public TownHallPrototypeData TownHallPrototypeData { get; private set; }
 
@@ -18,7 +22,11 @@ public class GameDataManager
     {
         Log.Call();
 
-        TownHallPrototypeData = await townHallDataManager.LoadDataAsync();
+        var data = await googleSheetManager.GetSheetData<TownHallRawData[]>(reader);
+        var json = JsonConvert.SerializeObject(data);
+
+        //if it work it work :D
+        TownHallPrototypeData = townHallDataManager.Convert(json);
 
         Log.Array(TownHallPrototypeData.DataList);
     }

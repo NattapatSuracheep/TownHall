@@ -7,7 +7,7 @@ using UnityEngine;
 public class TestGoogleSheetReader : MonoBehaviour
 {
     [SerializeField] private GoogleSheetReaderScriptableObject testGoogleSheetReader;
-    private GoogleSheetReader googleSheetReader = new(":D");
+    private GoogleSheetReader googleSheetReader = new();
     private GoogleSheetParser googleSheetParser = new();
 
     private string rawData;

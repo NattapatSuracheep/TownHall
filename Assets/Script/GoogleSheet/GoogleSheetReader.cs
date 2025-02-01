@@ -6,13 +6,8 @@ using Cysharp.Threading.Tasks;
 public class GoogleSheetReader
 {
     private const string baseUrl = "https://sheets.googleapis.com/v4/spreadsheets";
-    private string apiKey = ":D";
+    private string apiKey = "AIzaSyDKyvJenSB3qEdCRIi7NZeTHaByI_AG4fQ";
     private string apiUrl;
-
-    public GoogleSheetReader(string apiKey)
-    {
-        this.apiKey = apiKey;
-    }
 
     public async UniTask<string> ReadAsync(GoogleSheetReaderScriptableObject readerScriptableObject)
     {

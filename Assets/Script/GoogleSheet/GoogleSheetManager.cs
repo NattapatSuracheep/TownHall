@@ -2,7 +2,7 @@ using Cysharp.Threading.Tasks;
 
 public class GoogleSheetManager
 {
-    private GoogleSheetReader reader = new("AIzaSyDKyvJenSB3qEdCRIi7NZeTHaByI_AG4fQ");
+    private GoogleSheetReader reader = new();
     private GoogleSheetParser parser = new();
 
     public async UniTask<T> GetSheetData<T>(GoogleSheetReaderScriptableObject readerScriptableObject)

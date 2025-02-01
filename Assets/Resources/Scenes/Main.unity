@@ -221,6 +221,8 @@ MonoBehaviour:
   cameraManager: {fileID: 25171357}
   mainCanvas: {fileID: 1049024383}
   mainCanvasSafeArea: {fileID: 741291820}
+  gameDataManager:
+    reader: {fileID: 11400000, guid: 92d6756e10f2a4244b149015565dc92f, type: 2}
   sceneNavigator: {fileID: 25171356}
   vfxManager: {fileID: 25171360}
   inputManager: {fileID: 25171364}
@@ -2037,7 +2039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1471789810
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2070,8 +2072,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
+  m_Color: {r: 0.078431375, g: 0.078431375, b: 0.078431375, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
