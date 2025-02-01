@@ -49,6 +49,7 @@ public class TownHallObj_2 : MonoBehaviour
         var imageUrl = msg.Substring(startIndex);
 
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(imageUrl);
+        request.SetRequestHeader("Access-Control-Allow-Origin", "*");
         await request.SendWebRequest();
         var tex = ((DownloadHandlerTexture)request.downloadHandler).texture;
         var img = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
