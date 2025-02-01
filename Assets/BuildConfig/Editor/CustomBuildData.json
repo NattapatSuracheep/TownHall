@@ -1,0 +1,9 @@
+{
+    "keystore": {
+        "path": "android-keystore.keystore",
+        "name": "android-keystore",
+        "password": "pinkunggdev",
+        "alias": "pinkunggdev",
+        "aliasPassword": "pinkunggdev"
+    }
+}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8f2a5b9e9640247a1cbb2bc09d7f87, type: 3}
+  m_Name: GoogleSheetEditorWindowData
+  m_EditorClassIdentifier: 
+  dataList:
+  - assemblyName: 'System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[CharacterPrototype,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+    readerData: {fileID: 11400000, guid: c51761157758a3b49899658cb791a501, type: 2}
+    savePath: Assets/Addressable/Configs/CharacterPrototype.json
+  - assemblyName: CharacterPrototypeConstant
+    readerData: {fileID: 11400000, guid: 2a3300c30c3a620498e688b205a845a1, type: 2}
+    savePath: Assets/Addressable/Configs/CharacterPrototypeConstant.json
+  - assemblyName: 'System.Collections.Generic.Dictionary`2[[System.String, mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[StagePrototype,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+    readerData: {fileID: 11400000, guid: a68982841dbcba941b0856920a98b131, type: 2}
+    savePath: Assets/Addressable/Configs/StagePrototype.json

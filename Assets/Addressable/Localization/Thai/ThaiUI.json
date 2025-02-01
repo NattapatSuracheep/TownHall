@@ -1,0 +1,8 @@
+{
+  "stage_select_title": "เลือกด่าน",
+  "stage_select_message": "คุณต้องการที่จะเลือกด่าน <b>\"{0}\"</b> หรือไม่",
+  "leave_stage_button": "ออกจากด่าน",
+  "leave_stage_title": "ออกจากด่าน",
+  "leave_stage_message": "คุณต้องการออกจากด่านหรือไม่",
+  "resume": "เล่นต่อ"
+}

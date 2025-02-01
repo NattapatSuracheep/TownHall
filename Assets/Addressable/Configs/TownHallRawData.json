@@ -1,0 +1,47 @@
+[
+  {
+    "Date": "2/3/2025",
+    "Topic": "Build 0.4.8",
+    "Message": "Build 0.4.8 Prod"
+  },
+  {
+    "Date": "",
+    "Topic": "",
+    "Message": "Submit Google Review"
+  },
+  {
+    "Date": "",
+    "Topic": "",
+    "Message": "Submit Apple Review"
+  },
+  {
+    "Date": "",
+    "Topic": "Profiling",
+    "Message": "List function ที่มีปัญหา"
+  },
+  {
+    "Date": "",
+    "Topic": "",
+    "Message": "ใส่ Card ใน Panka"
+  },
+  {
+    "Date": "2/4/2025",
+    "Topic": "Optimization [1]",
+    "Message": "เพิ่ม Addressable Cache Manager"
+  },
+  {
+    "Date": "",
+    "Topic": "",
+    "Message": "Test Addressable Cache Manager"
+  },
+  {
+    "Date": "2/5/2025",
+    "Topic": "Optimization [2]",
+    "Message": "Re-write every addressable code in project"
+  },
+  {
+    "Date": "2/6/2025",
+    "Topic": "Optimization [3]",
+    "Message": "Re-write every addressable code in project"
+  }
+]

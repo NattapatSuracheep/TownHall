@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/URP/New Universal Render Pipeline Asset_Renderer.asset.meta
+guid: b53d9709c5f2edf40a3af44704a217d5
+NativeFormatImporter:
+========
+guid: 539cb47abfe167b48bc688796cca8b4b
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> 46ef798 (update base):Assets/Addressable/Prefab/UI/PageIndicator.meta
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,8 @@
+{
+  "stage_select_title": "Stage select",
+  "stage_select_message": "Do you want to play <b>\"{0}\"</b> stage ?",
+  "leave_stage_button": "Leave stage",
+  "leave_stage_title": "Leave stage",
+  "leave_stage_message": "Do you want to leave this stage ?",
+  "resume": "Resume"
+}
