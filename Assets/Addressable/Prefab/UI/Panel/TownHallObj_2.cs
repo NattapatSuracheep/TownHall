@@ -46,7 +46,7 @@ public class TownHallObj_2 : MonoBehaviour
             return false;
 
         var startIndex = msg.IndexOf("image=") + "image=".Length;
-        var imageUrl = msg.Substring(startIndex);
+        var imageUrl = string.Format(msg.Substring(startIndex), GameManager.CurrentURL);
 
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(imageUrl);
         await request.SendWebRequest();

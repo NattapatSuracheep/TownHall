@@ -72,6 +72,8 @@ public class GameManager : MonoBehaviour
     public BuildConfig BuildConfig => buildConfig;
     public InputManager InputManager => inputManager;
 
+    public static string CurrentURL { get; private set; }
+
     private void OnValidate()
     {
         if (sceneNavigator == null && !TryGetComponent(out sceneNavigator))
@@ -90,6 +92,9 @@ public class GameManager : MonoBehaviour
     private async void Start()
     {
         Log.Call();
+
+        CurrentURL = Application.absoluteURL;
+        Log.Logging(CurrentURL);
 
         SceneNavigator.FadeBackInAsync().Forget();
 
